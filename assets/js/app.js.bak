@@ -1,0 +1,69 @@
+let cl = console.log;
+
+let ages = [20,40,50,32,21,25,28,34,52];
+
+let doubleages = [];
+
+// for(let i =1; i <  ages.length; i++){
+	// // cl(ages[i]*2);
+	// doubleages.push(ages[i]*2);
+// }
+// cl(doubleages);
+
+
+
+// ages.forEach(function(age){
+	// cl(age);
+// })
+// cl(doubleages);
+
+
+
+// ages.forEach((age)=>{
+	// cl(age);
+// })
+
+
+// ages.forEach((age)=>{
+	// doubleages.push(age*2);
+// })
+// cl(doubleages);
+
+
+ages.forEach(age=>doubleages.push(age*2))   
+
+cl(doubleages);
+
+
+// Map >> To map the data
+// it returns new array
+
+ages = [20,40,50,32,21,25,28,34,52];
+
+// let Newdoubleages = ages.map(function(age){
+	// return age * 2
+// })
+// cl(Newdoubleages);
+
+
+// let Newdoubleages = ages.map((age)=>{
+	// return age * 2
+// })
+// cl(Newdoubleages);
+
+let Newdoubleages = ages.map(age => age * 2)
+cl(Newdoubleages);
+
+
+
+
+// let sqrtages = ages.map(function(age){
+	// return Math.sqrt(age);
+// })
+// cl(sqrtages);
+
+
+let sqrtages = ages.map(age => Math.sqrt(age))
+
+let(sqrtages);
+

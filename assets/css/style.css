@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#backDrop{
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    display:none;
+}
+#backDrop.show{
+    display: block;
+}
+.myModal{
+    position: fixed;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    top: 25vh;
+    width: 60%;
+    left: 20%;
+    border: 1px solid rgba(0,0,0,.25);
+    box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    display: none;
+    animation: slide-down .3s ease-out forwards;
+    z-index: 1;
+}
+.myModal.show{
+    display: block;
+}
+.myClose{
+    float: right;
+    cursor: pointer;
+}
+.myModalHeading.myClose{
+    float: right;
+    cursor: pointer;
+}
+.editDelet{
+    float: right;
+    cursor: pointer;
+}
+
+
+
+@keyframes slide-down {
+    from{
+        transform: translateY(-5rem);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
